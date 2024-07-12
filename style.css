@@ -1,0 +1,430 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+
+}
+
+.container {
+    background-image: url("https://i.pinimg.com/736x/65/0a/c6/650ac603e943785a029ae7cc4a611358.jpg");
+    /* z-index: 10; */
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    z-index: -2;
+
+}
+
+#inicio {
+    width: 100%;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+#inicio .fondo {
+    background-image: url("https://i.pinimg.com/564x/28/e6/30/28e6304a0a36f2edef9410e9efe72538.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 78vh;
+    /* Ajusta este valor según el porcentaje de altura que desees */
+}
+
+#inicio .presentacion {
+    position: relative;
+    /* Necesario para el posicionamiento del pseudo-elemento */
+    width: 100%;
+    height: 78vh;
+    /* Igual que el fondo para que coincidan */
+    color: #080808;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to bottom, rgba(8, 8, 4, 0.301), rgba(0, 0, 0, 0)); /* Gradiente de oscuro a transparente */
+
+    /* justify-content: center; */
+}
+
+#inicio .presentacion::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(194, 194, 194, 0.151);
+    /* Color oscuro con opacidad */
+    z-index: 1;
+}
+
+#inicio .presentacion>* {
+    position: relative;
+    color: rgba(255, 255, 255, 0.925);
+    font-weight: 400;
+    z-index: 2;
+    /* Para asegurarte de que el contenido esté por encima del pseudo-elemento */
+}
+
+#inicio .presentacion h1 {
+    margin-top: 40px;
+    font-family: "Dancing Script", cursive;
+    font-size: 150px;
+ 
+
+
+}
+
+#inicio .presentacion .fecha {
+    margin-top: 20px;
+    border-bottom: 2px solid;
+    border-right: 2px solid;
+    
+    align-items: center;
+    justify-content: center;
+    color: rgb(211, 185, 100);
+
+}
+
+#inicio .presentacion p {
+    /* font-family: "Dancing Script", cursive; */
+    font-size: 50px;
+    margin: 8px;
+    box-shadow: 10 ;
+
+    font-weight: 400;
+
+}
+
+#inicio .presentacion h2 {
+    font-family: "DM Serif Display", serif;
+    font-size: 50px;
+    margin-top: 20px;
+    font-weight: 400;
+}
+
+#inicio .descripcion {
+    margin: 0 auto;
+    /* Centra el bloque horizontalmente */
+    text-align: center;
+    /* Centra el texto dentro del bloque */
+
+    font-size: 40px;
+    align-items: center;
+    justify-content: center;
+    font-family: "Merriweather", serif;
+   
+  font-weight: 700;
+  font-style: italic;
+  /* margin-left: 60px; */
+
+}
+#inicio .descripcion p{
+    padding: 10px;
+}
+.container-des{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+ 
+
+}
+.container-fecha {
+    width: 30%;
+    font-family: "Merriweather", serif;
+    font-size: 70px;
+    display: flex; /* Añadir display flex */
+    flex-direction: column;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    margin-left: 20px;
+}
+.ubicacion{
+    width: 100%;
+    font-size: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    font-family: "DM Serif Display", serif;
+    position: relative; 
+}
+.ubicacion h3{
+    text-shadow: 2px 20px 10px  rgb(0, 0, 0);
+}
+.ubicacion h3 {
+    font-family: "Tangerine", cursive;
+  font-weight: 400;
+  font-style: normal;
+    font-size: 300px;
+    color: rgb(211, 185, 100);
+    position: absolute; /* Coloca h3 en posición absoluta */
+    top: 40%; /* Ajusta según sea necesario */
+    left: 50%; /* Ajusta según sea necesario */
+    transform: translate(-50%, -50%); /* Centra el h3 */
+    z-index: 0; /* Envía h3 al fondo */
+}
+.ubicacion p{
+    margin-bottom: 50px;
+}
+.container-ubi{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+.ceremonia{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.img-iglesia{
+    width: 150px;
+
+}
+.img-iglesia img{
+    width: 100%;
+
+}
+.recepcion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.desc-ceremonia{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.desc-ceremonia p{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.img-recepcion{
+    width: 150px;
+
+}
+.img-recepcion img{
+    width: 100%;
+
+}
+.desc-recepcion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.desc-recepcion p{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.foto2 {
+    margin-top: 100px;
+    width: 100%;
+    height: 85vh; /* Altura del contenedor */
+    overflow: hidden; /* Asegura que se recorte lo que excede el contenedor */
+}
+
+.foto2 img {
+    width: 100%;
+    height: auto; /* Mantiene la proporción de la imagen */
+    max-height: 100%; /* Limita la altura al 100% del contenedor */
+    object-fit: cover; /* Asegura que la imagen cubra el contenedor */
+    object-position: center top; /* Centra la imagen en la parte superior */
+}
+.container-detalle{
+    display: flex;
+    flex-direction: column;
+}
+.detalles{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.detalles h1{
+    /* text-shadow: 2px 10px 10px  rgb(0, 0, 0);  */
+}
+
+.detalles h1{
+    font-family: "Dancing Script", cursive;
+    font-size: 110px;
+    
+}
+.linea-vertical {
+    width: 2px; /* Ancho de la línea */
+    height: 150px; /* Altura de la línea */
+    background-color: rgb(73, 59, 14);
+    box-shadow: 5px 5px 10px;
+    margin: 0 auto; /* Centra la línea horizontalmente, opcional */
+}
+.vestimenta{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+}
+.vestimenta p{
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 50px;
+    margin-top: 10px;
+}
+
+.color-vest{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+.color-vest .color1{
+    width: 90px;
+    height: 90px;
+    margin-right: 30px;
+    background-color: black;
+    border-radius: 50%;
+}
+.color-vest .color2{
+    width: 90px;
+    height: 90px;
+    margin-right: 30px;
+    background-color: rgb(14, 19, 78);
+    border-radius: 50%;
+}
+.color-vest .color3{
+    width: 90px;
+    height: 90px;
+    margin-right: 30px;
+    background-color: rgb(43, 21, 8);
+    border-radius: 50%;
+}
+.color-vest .color4{
+    width: 90px;
+    height: 90px;
+    background-color: rgb(139, 75, 75);
+    border-radius: 50%;
+}
+
+.obsequios{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    margin: 0 auto;
+    /* Centra el bloque horizontalmente */
+    text-align: center;
+    /* Centra el texto dentro del bloque */
+
+}
+.obsequios p{
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 50px;
+    margin-top: 10px;
+    padding: 50px;
+}
+.img-obs{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.obs1{
+    width: 150px;
+    margin-right: 50px;
+}
+.obs1 img{
+    width: 100%;
+}
+
+.obs2{
+    width: 130px;
+    margin-left: 50px;
+}
+.obs2 img{
+    width: 100%;
+
+}
+
+.asistencia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    /* Centra el bloque horizontalmente */
+    text-align: center;
+    /* Centra el texto dentro del bloque */
+    margin-top: 100px;
+}
+.asistencia h1{
+    font-family: "Dancing Script", cursive;
+    font-size: 110px;
+}
+.asistencia h2{
+    font-size: 50px;
+    margin-top: 10px;
+}
+.asistencia p{
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 50px;
+    margin-top: 10px;
+    padding: 50px;
+}
+.asistencia button{
+    width: 400px;
+    height: 70px;
+    font-size: 40px;
+    border-radius: 30px;
+    background-color: rgba(128, 128, 128, 0.247);
+    box-shadow: 5px 5px 20px;
+}
+.foto3{
+    margin-top: 100px;
+    width: 100%;
+    height: 70vh; /* Altura del contenedor */
+    overflow: hidden; /* Asegura que se recorte lo que excede el contenedor */
+}
+.foto3 img {
+    width: 100%;
+    height: auto; /* Mantiene la proporción de la imagen */
+    max-height: 100%; /* Limita la altura al 100% del contenedor */
+    object-fit: cover; /* Asegura que la imagen cubra el contenedor */
+    object-position: center top; /* Centra la imagen en la parte superior */
+}
+.saludos{
+    display: flex;
+    margin-top: 80px;
+    padding-bottom: 40px;
+
+    align-items: center;
+    justify-content: center;
+}
+.saludos h1{
+    font-family: "Dancing Script", cursive;
+    font-size: 110px;
+}
