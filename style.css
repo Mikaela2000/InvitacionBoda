@@ -112,7 +112,7 @@
     text-align: center;
     /* Centra el texto dentro del bloque */
 
-    font-size: 40px;
+    font-size: 45px;
     align-items: center;
     justify-content: center;
     font-family: "Merriweather", serif;
@@ -322,14 +322,14 @@
 }
 
 .obsequios{
-    margin-top: 50px;
+    margin-top: 80px;
     margin-bottom: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 35px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     /* Centra el bloque horizontalmente */
     text-align: center;
     /* Centra el texto dentro del bloque */
@@ -340,8 +340,9 @@
     font-weight: 700;
     font-style: italic;
     font-size: 50px;
-    margin-top: 10px;
-    padding: 50px;
+    margin-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 .img-obs{
     display: flex;
